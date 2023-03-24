@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="modal.css" type="text/css" />
+		<title>Modal</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Your Subscriptions</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Subscription</th>
+						<th>Next Rebill</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>$49.99 per month</td>
+						<td>December 13, 2020</td>
+						<td><button class="cancelbtn">Cancel</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<!-- this is the modal content -->
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<p class="confirm">Are you sure you want to cancel your subscription?</p>
+				<button class="noBtn" id="no-button">No</button>
+				<button class="yesBtn" id="yes-button">Yes - Cancel</button>
+			</div>
+		</div>
+		
+		<!-- javascript code that will be used to open the modal -->
+		<footer>
+			<script type="text/javascript" src="modal.js"></script>
+		</footer>
+	</body>
+</html>
